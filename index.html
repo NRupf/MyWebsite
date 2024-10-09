@@ -1,25 +1,112 @@
+<!--
+    --color1: rgba(71,54,46, 1);
+    --color2: rgba(254,228,179,0.5);
+
+    --color2: rgba(154, 171, 137, 0.7);
+    --color1: rgba(70,70,70,0.9);
+
+
+-->
+
 <style>
+  :root{
+    --color2: rgba(32,51,67, 1);
+    --color1: rgba(63,73,97,1);
+
+    --color11: rgb(255,255,255);
+    --color12: rgba(32,51,67,1);
+    --color21: rgba(32,51,67,1);
+    --color22: rgba(219,225,228, 0.9);
+  }
+
+
 
     .header{
-            background-color: brown;
-            color: beige;
+      font-family: Roboto, Arial;
+            background-color: var(--color12);
+            color: var(--color11);
 
             padding: 10px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            
         }
+
+    .header-left{
+      float: left;
+    }
+    .header-right{
+      float: right;
+    }
+        
+
+
+    .topic-button, .topic-button-current {
+      
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.topic-button, .topic-button-current:hover{
+  background-color: var(--color12);
+      color: var(--color11);
+  border-color: var(--color11);
+}
+.topic-button-current, .topic-button:hover {
+  background-color: var(--color11);
+      color: var(--color12);
+      border-color: var(--color12);
+}
+.topic-button:active{
+  opacity: 0.7;
+}
 
 
     .main{
-        
-        color: brown;
+      font-family: Roboto, Arial;
+      color: var(--color21);
+      padding: 10px
     }
 
 
     .footer{
-        background-color: brown;
-        color: beige;
+      font-family: Roboto, Arial;
+        background-color: var(--color12);
+        color: var(--color11);
+      
+        padding: 10px;
 
 
-        padding: 10px
+        
+    }
+
+    .left-footer{
+      float: left;
+    }
+
+    .right-footer{
+      float: right;
+    }
+
+    .right-footer-row-image{
+      display: inline-block;
+      width: 20px;
+      vertical-align:bottom;
+    }
+
+    .inverse-link{
+      color: var(--color11);
+      display: inline-block;
+      padding-top: 4px;
+      font-weight: 300;
     }
 </style>
 
@@ -32,41 +119,99 @@
 
     <title> Test - Problem Solving by Nicola</title>
 
+    <!-- Load Roboto fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general-styles.css">
 </head>
-<body style="background-color: beige;
+<body style="background-color: var(--color22);
     margin: 0px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;">
     <div class="header">
-        Nicola Rupf; 
 
+      <div class="header-left">
+        <button class="topic-button-current">Home</button>
+      </div>
 
-        create link to different subpages on right side
+      <div class="header-right">
+        <button class="topic-button">Problem Solving</button>
+        <button class="topic-button">Phyiscs</button>
+        <button class="topic-button">Tutoring</button>
+        <button class="topic-button">Personal</button>
+      </div>
+        
+      
     </div>
 
     <div class="main">
         <p>
             <emph>About: </emph> I like people and their stories, as well as solving problems
         </p>
-    
+        
+        
         
         <br>
         This is Nicola's problem solver website!  
         
         <p>
+
+        Struktur:<br>
+        <ul>
+          <li>
+            Home
+          </li>
+          <li>Physics
+            <ul>
+              <li> BSc at ETH
+                <ul> Zusammenfassungen</ul>
+              </li>
+              <li> Project at PSI</li>
+              <li> Project at UNESP</li>
+            </ul>
+          </li>
+          <li> Tutoring / Nachhilfe</li>
+          <li> Personal Projects
+            <ul>
+              <li>Website</li>
+              <li>App</li>
+            </ul>
+          </li>
+          <li>
+            Problem Solving / Small Scale Consulting
+            <ul>
+              <li>Haller Tournet Website with Squarespace</li>
+              <li>Evtl ESM</li>
+            </ul>
+          </li>
+          <li>
+            About Me
+          </li>
+        </ul>
             
 
 
-          Projects:
-          <ul>
-            <li> Muettis Website </li>
-            <li> Meine Website</li>
-            <li> Nachhilfe / Vikariat</li>
-          </ul>
+          
         </p>
 
         <br>
+        <div>
+          Test
+        </div>
+        <div>
+          Test
+        </div>
+        <div>
+          Test
+        </div>
+        <div>
+          Test
+        </div>
+        
+______________
         Test
         <br>
         Test
@@ -163,8 +308,24 @@
 
 
     <footer class="footer">
-      <a href="https://www.linkedin.com/in/nicolarupf/" target="_blank"> Nicola's LinkedIn</a>
-      <a href="https://www.instagram.com/nicolarupf/" target="_blank"> Nicola's Instagram</a>
+      <div class = "left-footer">
+        <emph>Contact:</emph>
+        <br>
+        <a href="mailto:nicola.rupf@gmail.com" class="inverse-link">nicola.rupf@gmail.com</a>
+      </div>
+
+      <div class="right-footer">
+        <div class="right-footer-row">
+          <img class="right-footer-row-image" src="images/In-Blue-Logo.png.original.png">
+          <a href="https://www.linkedin.com/in/nicolarupf/" target="_blank" class="inverse-link">
+          Nicola's LinkedIn</a>
+        </div>
+        <div class="right-footer-row">
+          <img class="right-footer-row-image" src="images/instagram-logo.jpg">
+          <a href="https://www.instagram.com/nicolarupf/" target="_blank" class="inverse-link">
+          Nicola's Instagram</a>
+        </div>
+      </div>
       
     </footer>
 
