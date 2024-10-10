@@ -2,8 +2,9 @@
     background-color: var(--color12);
     color: var(--color11);
   
-    padding: 10px;
-    padding-bottom: 20px;
+    
+
+    padding: 30px 20px;
 
     display:flex;
     flex-direction: row;
