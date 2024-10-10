@@ -1,0 +1,32 @@
+.footer{
+    background-color: var(--color12);
+    color: var(--color11);
+  
+    padding: 10px;
+    padding-bottom: 20px;
+
+    display:flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+
+    
+}
+
+
+
+.right-footer-row-image{
+  display: inline-block;
+  width: 20px;
+  vertical-align:bottom;
+}
+
+.inverse-link{
+  color: var(--color11);
+  display: inline-block;
+  padding-top: 4px;
+  font-weight: 300;
+}
