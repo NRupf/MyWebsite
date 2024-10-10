@@ -1,0 +1,7 @@
+.main{
+  flex: 1;
+  font-family: Roboto, Arial;
+  color: var(--color21);
+  padding: 20px
+
+}
