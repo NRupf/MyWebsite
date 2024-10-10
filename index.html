@@ -17,101 +17,18 @@
     --color12: rgba(32,51,67,1);
     --color21: rgba(32,51,67,1);
     --color22: rgba(219,225,228, 0.9);
+  
+    --color31: rgb(255,255,255); 
+    --color32: rgba(156, 185, 209, 1);
   }
 
 
 
-    .header{
-      font-family: Roboto, Arial;
-            background-color: var(--color12);
-            color: var(--color11);
-
-            padding: 10px;
-            padding-top: 30px;
-            padding-bottom: 20px;
-            
-        }
-
-    .header-left{
-      float: left;
-    }
-    .header-center{
-      display: inline-block;
-      margin-left: 20px;
-    }
-    .header-logo{
-      float: right;
-      padding: 10px
-    }
-        
 
 
-    .topic-button, .topic-button-current {
-  border-style: solid;
-  border-width: 1px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-right: 10px;
-  transition: background-color 0.15s, color 0.15s;
-}
-
-.topic-button, .topic-button-current:hover{
-  background-color: var(--color12);
-      color: var(--color11);
-  border-color: var(--color11);
-}
-.topic-button-current, .topic-button:hover {
-  background-color: var(--color11);
-      color: var(--color12);
-      border-color: var(--color12);
-}
-.topic-button:active{
-  opacity: 0.7;
-}
 
 
-    .main{
-      font-family: Roboto, Arial;
-      color: var(--color21);
-      padding: 10px
-    }
 
-
-    .footer{
-      font-family: Roboto, Arial;
-        background-color: var(--color12);
-        color: var(--color11);
-      
-        padding: 10px;
-
-
-        
-    }
-
-    .left-footer{
-      float: left;
-    }
-
-    .right-footer{
-      float: right;
-    }
-
-    .right-footer-row-image{
-      display: inline-block;
-      width: 20px;
-      vertical-align:bottom;
-    }
-
-    .inverse-link{
-      color: var(--color11);
-      display: inline-block;
-      padding-top: 4px;
-      font-weight: 300;
-    }
 </style>
 
 
@@ -128,24 +45,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/general-styles.css">
-</head>
-<body style="background-color: var(--color22);
-    margin: 0px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;">
-    <div class="header">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/highlightbar.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
 
-      <div class="header-left">
+</head>
+<body>
+    <div class="header" >
+
+      <div class="header-home">
         <button class="topic-button-current">Home</button>
       </div>
-      <div class="header-center">
+      <div class="header-topics">
         <button class="topic-button">Problem Solving</button>
         <button class="topic-button">Phyiscs</button>
         <button class="topic-button">Tutoring</button>
         <button class="topic-button">Personal</button>
       </div>
+      <div class="header-horizontal-spacing"></div>
       <div class="header-logo">
         <botton>LOGO</botton>
       </div>
@@ -153,159 +72,50 @@
       
     </div>
 
-    <div class="main">
-        <p>
-            <emph>About: </emph> I like people and their stories, as well as solving problems
-        </p>
-        
-        
-        
-        <br>
-        This is Nicola's problem solver website!  
-        
-        <p>
 
-        Struktur:<br>
-        <ul>
-          <li>
-            Home
-          </li>
-          <li>Physics
-            <ul>
-              <li> BSc at ETH
-                <ul> Zusammenfassungen</ul>
-              </li>
-              <li> Project at PSI</li>
-              <li> Project at UNESP</li>
-            </ul>
-          </li>
-          <li> Tutoring / Nachhilfe</li>
-            <ul>
-              <li> Vikariat </li>
-              <li> Primar bis Uni</li>
-            </ul>
-          <li>
-            Problem Solving / Small Scale Consulting
-            <ul>
-              <li> Personal Projects
-                <ul>
-                  <li>Website</li>
-                  <li>App</li>
-                </ul>
-              </li>
-              <li>Haller Tournet Website with Squarespace</li>
-              <li>Evtl ESM</li>
-            </ul>
-          </li>
-          <li>
-            About Me
-          </li>
-        </ul>
+
+    <div class="highlightbar">
+      <div class="highlightbar-text">
+      Welcome to Nicola Rupf's Problem Solver Website!
+      </div>
+      <div class="highlightbar-image-container">
+        <img class="highlightbar-image" src="images/portrait.jpg">
+      </div>
+    </div>
+
+    <div class="main">
+      <p>
+        <div class="paragraph-title">About</div> 
+          Hello, my name is Nicola. I love people and their stories, as well as solving problems, which is why I created this website.
+      </p>
+
+      <p>
+        <div class="paragraph-title">How you may profit</div> 
+          On this website you will find different sections. Depending on your interests, you may gravitate towards different topics.
+          <ul>
+            <li>
+              If you have any problem you're not particularly interested in yourself or if it lies within a field you're not proficient in, 
+          do not hesitate to contact me! Maybe I have the time and resources to work out something with or for you! See ...... for details.
+            </li>
+            <li>For physicists, students and general natural sciences afficionados I describe my journey in physics in ... , including project reports and summaries.</li>
+            <li>For teachers looking for substitutes or students from primary school through gymnasium and university undergraduates, if you are interested in teaching, tutoring or mentorship, let's check whether it lies within my capabilities and discuss possible plans of action. For details see ... .</li>
+            <li>The curious will find some more information about myself in .... .
+            </li>
+          </ul>
+          
+      </p>
+        
+        
+
+
+        In any case, please do not hesitate to 
+        <a href="mailto:nicola.rupf@gmail.com" class="general-link">contact</a> me! I am looking forward to hearing from you!
+
             
 
 
           
         </p>
-
-        <br>
-        <div>
-          Test
-        </div>
-        <div>
-          Test
-        </div>
-        <div>
-          Test
-        </div>
-        <div>
-          Test
-        </div>
-        
-______________
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
-        Test
-        <br>
     </div>
     
 
