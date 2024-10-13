@@ -17,19 +17,33 @@
         
     }
 
+@media (max-width: 600px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .header-home{
   width: 100px;
 
 }
+.header-home, .header-topics, .header-logo{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 .header-topics{
   flex: 1;
+  
 }
 
 
 
 .header-logo{
   width:100px;
+  
 }
 
 
