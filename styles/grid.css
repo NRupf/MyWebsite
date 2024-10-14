@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-width: 639px)  and (min-width: 300px){
+@media (max-width: 739px)  and (min-width: 300px){
   .project-grid{
     grid-template-columns: 1fr 1fr;
   }
@@ -40,6 +40,11 @@
 
 .project-grid-cell:active{
   opacity: 0.3;
+}
+.project-link{
+  text-decoration: none;
+  color: var(--color21);
+
 }
 
 .project-image{

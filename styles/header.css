@@ -29,7 +29,7 @@
   width: 100px;
 
 }
-.header-home, .header-topics, .header-logo{
+.header-home, .header-topics {
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -42,10 +42,22 @@
 
 
 .header-logo{
-  width:100px;
+  
+  padding-right: 10px;
+  padding-left: 10px;
   
 }
 
+.logo-container{
+  
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-image{
+  
+}
 
 
 
