@@ -41,6 +41,12 @@ body{
   margin-bottom: 2px;
 }
 
+.section-title{
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
 .paragraph-title{
   font-weight: 700;
   font-size: 16px;
@@ -50,5 +56,13 @@ body{
 .general-link{
   font-weight: 300;
   color: var(--color21);
+}
+
+
+.languages-container{
+  padding-bottom: 10px;
+}
+.language-icon{
+  height:12px;
 }
 
