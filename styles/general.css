@@ -61,8 +61,9 @@ body{
 
 .languages-container{
   padding-bottom: 10px;
+  height:12px;
 }
 .language-icon{
-  height:12px;
+  height:100%;
 }
 
