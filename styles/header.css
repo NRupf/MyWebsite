@@ -1,6 +1,5 @@
 
 .header{
-  
         background-color: var(--color12);
         color: var(--color11);
 
@@ -17,16 +16,10 @@
         
     }
 
-@media (max-width: 600px) {
-  .header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 
 .header-home{
-  width: 100px;
+  padding-right: 10px;
 
 }
 .header-home, .header-topics {
@@ -38,6 +31,8 @@
   flex: 1;
   
 }
+
+
 
 
 
@@ -53,11 +48,27 @@
   height: 50px;
   display: flex;
   justify-content: center;
+  
 }
 
 
 
+@media (max-width: 600px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .logo-container{
+    margin-right: 10px;
+  }
+
+  .header-home{
+    padding: 0px;
+  
+  }
+}
 
 
 
@@ -75,6 +86,7 @@ padding-right: 16px;
 border-radius: 4px;
 cursor: pointer;
 margin-right: 10px;
+margin-bottom:10px ;
 transition: background-color 0.15s, color 0.15s;
 }
 
