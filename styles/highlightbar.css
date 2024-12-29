@@ -1,5 +1,6 @@
 .highlightbar{
   background-color: var(--color32);
+  background-color: rgba(96, 120, 98, 0.8);
   color: var(--color31);
   min-height: 220px;
   display: flex;
